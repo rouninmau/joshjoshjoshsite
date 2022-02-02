@@ -1,0 +1,303 @@
+/* Variables */
+
+:root {
+    --accentdark: #0a2652;
+    --accentlight: #3f6b8c;
+    --accentbackground: #1d293c;
+    --accentbackgrounddark: #0E1626;
+    --accentbackgroundlight: #f0eeeb;
+    --accentretro: #2d4d99;
+    --foregrounddark: #082b64;
+    --headerfont: "Coolvetica", sans-serif;
+    --bodyfont: "Spinnaker Regular", sans-serif;
+    --beigedither: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAA1segfg4SLAAAAAJ0Uk5TAP9bkSK1AAAADElEQVR4nGNwYGgAAAFEAME6ehxWAAAAAElFTkSuQmCC');
+    --retrowave: #8cbeb2 -3px 4px 0px 0px, #f2ebbf -6px 7px 0px 0px, #f06060 -9px 10px 0px 0px;
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url('../font/coolvetica\ rg.otf');
+}
+
+@font-face {
+    font-family: "Spinnaker Regular";
+    src: url('../font/Spinnaker-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Chivo Black Italic";
+    src: url('../font/Chivo-BlackItalic.ttf');
+}
+
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    color: white;
+    background-color: rgb(0, 35, 61);
+    width: 100%;
+}
+
+a.logo {
+    font-family: var(--headerfont) !important;
+    color: var(--accentretro) !important;
+    font-size: 3vh !important;
+}
+
+.navbar {
+    display: inline-flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    /* display: none; */
+}
+  
+.topnav {
+    position: relative;
+    background-color: var(--accentbackgroundlight);
+    padding: 3vw 10vw;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: var(--accentdark);
+    font-family: var(--bodyfont);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    /* background-color: #04AA6D;
+    color: white; */
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  
+.navbar p {
+    padding-left: 10px;
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+}
+
+.content {
+    padding: 20px;
+    font-size: 20px;
+    color: #ececec;
+    background: url(../img/hip-square.png) repeat, var(--accentbackgroundlight);
+    border-radius: 5px;
+    box-shadow: var(--retrowave);
+    border-radius: 10px;
+    border: 3px solid var(--foregrounddark);
+    border-top: 25px solid var(--foregrounddark);
+}
+
+.content h1 {
+    font-family: var(--headerfont);
+    font-size: 3vh;
+    color: var(--accentretro);
+    border-bottom: 4px solid var(--accentretro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.content h4 {
+    font-family: var(--bodyfont);
+    color: var(--foregrounddark);
+    margin-top:0;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.content p {
+    font-family: var(--bodyfont);
+    color: var(--foregrounddark);
+    font-size: 16px;
+}
+
+b {
+    font-family: "Chivo Black Italic", sans-serif;
+    font-weight: 1000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAACBFKbqRj6QAAAAJ0Uk5TAP9bkSK1AAAADElEQVR4nGNwYGgAAAFEAME6ehxWAAAAAElFTkSuQmCC) repeat;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* mix-blend-mode: multiply; */
+}
+
+body {
+    background-image: url("../imgs/ocean1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: " ";
+}
+
+#wrapper {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#center-panel {
+    margin: auto
+}
+
+.fakeButtons {
+    display: none !important;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    background-color: var(--accentlight);
+    border-color: var(--accentdark);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* .fakeMinimize {
+    left: 11px;
+    background-color: #005BA2;
+    border-color: #08114A;
+}
+
+.fakeZoom {
+    left: 16px;
+    background-color: #0070C8;
+    border-color: #08114A;
+} */
+
+.fakeMenu {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 20px;
+    background-color: var(--foregrounddark);
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.ocean {
+    height: 5%;
+    /* overflow: hidden; */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: #015871; */
+    background: #ffffff;
+    mix-blend-mode: multiply;
+    /* opacity: 0.4; */
+}
+
+.wave {
+    background: url(../imgs/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+
+.endWave {
+    display: none;
+}

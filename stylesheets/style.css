@@ -1,0 +1,104 @@
+/* Color scheme:
+   White: #0E6BA8 
+   Blue: #0E6BA8
+   Pink: #E0777D
+   Green: #47682C
+*/
+
+body {
+    font-family: 'Spectral', serif;
+    /* background-color: #202124; */
+    background-image: url("../imgs/ocean2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e8eaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0.3em;
+    margin-top: 0px;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: 'Spectral', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Spectral', sans-serif;
+}
+
+h5 {
+    font-size: 1.4em;
+    color: #0E6BA8;
+    /* color: #138bdb; */
+}
+
+h3 {
+    color: #E0777D;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+a {
+    color: #C0C2C4;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+hr {
+    border-top: 1px solid #e0e0e0;
+    /* color: #1D8A99; */
+    /* width: 500px; */
+    /* height: 15px; */
+}
+
+.home-center-card {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    /* padding: 10px; */
+    padding-top: 12%;
+    /* padding-bottom: 15%; */
+    align-items: center;
+    /* overflow: visible; */
+}
+
+.navbar {
+    display: flex;
+    /* position: sticky; */
+    float: left;
+    /* padding-left: 4%; */
+    font-size: 1.5em;
+    text-align: right;
+    /* border-right: 3px solid #0E6BA8; */
+    flex-direction: column;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.navbar a {
+    padding: 0.3em;
+    /* padding-right: 0.5em; */
+}
+
+.home-page-content {
+    /* vertical-align: top; */
+    float: right;
+    width: 90%;
+    padding-left: 8%;
+}
